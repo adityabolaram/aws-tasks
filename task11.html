@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .login {
+            width: 450px;
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            row-gap: 10px;
+        }
+        .inputs img {
+            align-self: center;
+        }
+        .inputs label {
+            align-self: left;
+            justify-content: center;
+            margin-bottom: -10px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .inputs input {
+            width: 98%;
+            height: 30px;
+            border-color: #c7c7c7;
+            border-style:solid;
+        }
+        .logbtn {
+            background-color: #4cb034;
+            color: white;
+            width: 100%;
+            height: 30px;
+            border: #4cb050;
+            margin-top: 10px;
+        }
+        .canbtn {
+            background-color: #f84033;
+            color: white;
+            height: 30px;
+            width: 65px;
+            border-color: #f84033;
+            border-style: solid;
+            border-radius: 4px;
+        }
+        .end {
+            margin-top: 25px;
+            background-color: #f1f1f1;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 270px;
+            align-items: center;
+        }
+        .cb {
+            display: flex;
+            flex-direction: row;
+            align-self: left;
+            column-gap: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="inputs">
+            <img src="pp.png" width="200px">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username">
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password">
+            <button class="logbtn">Login</button>
+        </div>
+        <div class="cb">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </div>    
+        <div class="end">
+            <button class="canbtn">Cancel</button>
+            <a>Forgot <u>password?</u></a>
+        </div>
+    </div>
+</body>
+</html>
